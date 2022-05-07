@@ -26,7 +26,7 @@ public static class DependencyInjectionConfig
                 : CultureInfo.InvariantCulture;
         });
 
-        DataInjectionConfiguration.DependencyInjection(services);
+        services.DependencyInjection();
         
         // BusinessDependencyInjectionConfig.DependencyInjection(services);
         // DataDependencyInjectionConfig.DependencyInjection(services, configuration);
