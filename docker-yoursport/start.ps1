@@ -1,0 +1,1 @@
+docker-compose -f .\yourSport.yml up

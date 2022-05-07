@@ -16,7 +16,9 @@ public class SqlContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(SqlContext).Assembly);
-
+        
         modelBuilder.ToSnakeCase();
+        
+        modelBuilder.HasSequence<long>("StateSequence").StartsAt(1).IncrementsBy(1);
     }
 }
